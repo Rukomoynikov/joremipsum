@@ -1,0 +1,371 @@
+*
+  box-sizing border-box
+
+body, html
+  padding 0px
+  margin 0px
+  font-family source_sans_proregular
+  font-size 16px
+  width 100%
+
+div.yellow_line
+  background-color #fdbd1f
+  height 5px
+  width 100%
+
+.wrap
+  width 1170px
+  margin 0px auto
+
+  > .top_menu
+    height 73px
+    padding 0px 0px 0px 25px
+
+    > .fa
+      line-height: 72px;
+      font-size: 35px;
+      color: #c7c7c7;
+      float: right;
+      display none
+
+    > .logo
+      float left
+      height 80px
+      padding-top 19px;
+
+      > img
+        float  left
+        margin-right 15px
+
+      > .slogan
+        display inline-block
+
+        > span
+          display block
+          color #9e8e92
+
+        > span:nth-of-type(1)
+          font-family source_sans_problack
+          letter-spacing 1px
+
+        > span:nth-of-type(2)
+          letter-spacing 1px
+          line-height 8px
+
+    > .menu
+      float: right
+
+      > a
+        display inline-block
+        vertical-align middle
+        color #9e8e92
+        padding 0px 25px
+        text-decoration none
+        line-height 73px
+        text-transform uppercase
+        font-family source_sans_prolight
+        font-size 13px
+        letter-spacing 1px
+
+      > a:hover
+        color white
+        background-color #fdbd1f
+
+  > .jumbo
+    background url('img/jumbo.jpg')
+    height 440px
+    position relative
+    background-position top center
+
+    > .text
+      color #ffffff
+      font-size 31px
+      font-family source_sans_problack
+      text-align center
+      padding 200px 0px
+      letter-spacing 1px
+
+      > a
+        background-color  #ab6f80
+        margin-bottom 5px
+        padding 10px
+        display inline-block
+        opacity 0.7
+        text-decoration none
+        color white
+
+      > a:hover
+        transition 0.3
+        opacity 1
+
+
+  > .info_block
+    /*height 270px*/
+    background #fdbd1f
+    text-align center
+    padding 54px 0px 45px 0px
+
+    > h3
+      margin 0px
+      padding 0px
+      color #ffffff
+      font-family source_sans_probold
+      letter-spacing 1px
+      font-size 22px
+
+    > p
+      font-family source_sans_prolight
+      font-size 20px
+      color #ffffff
+      width 560px
+      display inline-block
+      margin-top 9px
+
+    > .buttons
+      width 100%
+      text-align center
+      margin-top 22px
+      height 45px
+
+    > .buttons > .button:nth-of-type(1)
+      margin-right 20px
+
+  > .two_column
+    background #ffffff
+    padding 54px 40px
+
+    > .column:nth-of-type(2n)
+      display inline-block
+      margin-left 79px
+
+    > .column
+      display inline-block
+
+      > .description
+        display inline-block
+        vertical-align top
+        margin-left 43px
+        width 387px
+
+        > h3
+          font-size 20px
+          font-family source_sans_probold
+          letter-spacing 1px
+          color #ab6f80
+          margin 0px
+
+        > span
+          font-family source_sans_prolight
+          font-size 24px
+          color #fdbd1f
+
+        > p
+          max-width 400px
+          padding-bottom 10px
+
+  > .info_block_2
+    background #ab6f80
+    min-height  350px
+    padding 21px 61px
+
+    > .column
+      display inline-block
+      vertical-align top
+
+      > img
+        margin-top 39px
+
+      > .description
+        margin-left 58px
+        display inline-block
+        vertical-align top
+
+        > h3
+          color #ffffff
+          margin-top: 35px;
+          font-size: 17pt;
+          letter-spacing: 2px;
+          word-spacing: -6px;
+          margin-bottom 0px
+
+        > p
+          width 700px
+          color #fdbd1f
+          font-size 15px
+          line-height 23px
+
+        > span
+          font-family source_sans_prolight
+          font-size 15px
+          color white
+          line-height 21px
+
+  > .slider_block
+    min-height 550px
+    text-align center
+    padding 55px 0px 0px 0px
+
+    > h3
+      margin 0px
+      padding 0px
+      color #ab6f80
+      font-family  source_sans_probold
+      font-size 1.3rem
+      letter-spacing 0.2rem
+
+    > .caption
+      color #fdbd1f
+      font-family source_sans_prolight
+      font-size 1.2rem
+      letter-spacing 0.2rem
+
+    > span
+      max-width 690px
+      display inline-block
+      margin 40px 0px
+
+    > .notebook
+      margin 0px auto
+      padding: 28px 85px 0px 85px;
+
+      > img
+        border-radius 5px
+
+    > .nav
+
+      > .left
+        background url('./img/slider_arrow.png')
+        height 32px
+        width 31px
+
+      > .right
+        background url('./img/slider_arrow.png')
+        height 32px
+        width 31px
+        transform rotateY(180deg)
+
+  > .footer
+    background #f0f0f0
+    text-align center
+    vertical-align middle
+    line-height 113px
+
+    > a
+      color: #ab6f80
+
+/*Стили для кнопок*/
+
+a.button
+  background #ab6f80
+  color #fdbd1f
+  padding 11px 22px
+  border-radius 3px
+  font-family source_sans_problack
+  letter-spacing 1px
+  font-size 1.13rem
+  text-decoration none
+
+a.button_yellow
+  background #fdbd1f
+  color #ffffff
+  padding 3px 5px
+  border-radius 3px
+  font-family source_sans_problack
+  letter-spacing 1px
+  font-size 1.1rem
+  text-decoration none
+  display inline-block
+
+a.button_white
+  background white
+  color #ab6f80
+  padding 3px 5px
+  border-radius 3px
+  font-family source_sans_problack
+  letter-spacing 1px
+  font-size 1.1rem
+  text-decoration none
+
+
+// Отметки Boostrap 768-992,
+
+/*@media only screen and (max-width : 992px)*/
+  /*body*/
+    /*font-size 1rem*/
+
+    /*> .wrap*/
+      /*margin 0px auto*/
+      /*width 100%*/
+
+      /*> .two_column*/
+
+        /*> .column*/
+          /*display block*/
+
+        /*> .column:nth-of-type(2)*/
+          /*margin-left 0px*/
+
+@media only screen and (max-width: 992px)
+
+  body
+    font-size 16px
+
+    > .wrap
+      width 100%
+      margin 0px auto
+
+      > .top_menu
+        padding 0px 20px
+
+        > .fa
+          display block
+
+        > .menu
+          position absolute
+          top 78px
+          z-index 2
+          display none
+          margin 0px -20px
+          width 100%
+
+          > a
+            width 100%
+            text-align center
+            background #ffffff
+            border-bottom 1px solid black
+
+      > .info_block
+        > p
+          width auto
+
+      > .info_block_2
+        padding 20px
+        text-align center
+
+        >  .column
+          > .description
+            margin-left 0px
+            >p
+              width auto
+              text-align left
+
+      > .two_column
+        padding 54px 20px
+
+        > .column, .column:nth-of-type(2)
+          text-align center
+          margin-bottom 20px
+          margin-left 0px
+
+          > .description
+            text-align left
+            margin-left 0px
+            width auto
+
+            > p
+              width auto
+
+      > .footer
+        height auto
+        line-height 20px
+        padding 10px

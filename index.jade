@@ -1,0 +1,85 @@
+doctype html
+html(lang=ru)
+    head
+        script(src='')
+        link(rel="stylesheet", href="main.css", type="text/css")
+        link(rel="stylesheet", href="bower_components/normalize.css/normalize.css", type="text/css")
+        link(rel="stylesheet", href="bower_components/fontawesome/css/font-awesome.min.css", type="text/css")
+        link(rel="stylesheet", href="sourcesans/sourcesans.css", type="text/css")
+        script(src="bower_components/jquery/dist/jquery.min.js", type='text/javascript')
+        link(href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css", rel="stylesheet")
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js")
+        script(src="./app.js")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    body
+        .yellow_line
+        .wrap
+            .top_menu
+                .logo
+                    img(src='./img/logo.jpg')
+                    .slogan
+                        span Site name
+                        span caption goes here
+                i.fa.fa-bars(onclick='$(".menu").toggle()')
+                .menu
+                    a(href='') home
+                    a(href='') About
+                    a(href='') Service
+                    a(href='') PORTFOLIO
+                    a(href='') Contact
+            .jumbo
+                .text
+                    a(href='') Alivuam tinc
+                    br
+                    a(href='') Nunc dignissim risus id metus
+            .info_block
+                h3 Morbi interdum mollis sapien edac risus
+                p Integer vitae libero ac risus egestas placerat lectus arcu pulvinar risus vitae facilisis libero dolor a purus
+                .buttons
+                    a.button(href='') Lorem Ipsum
+                    a.button(herf='') Lorem Ipsum2
+            .two_column
+                .column
+                    img(src='./img/rocket_icon.jpg')
+                    .description
+                        h3 Jorem ipsum
+                        span Cestibulum auctor dapibus neque
+                        p Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi, tincidunt quis, accumsan porttitor, facilisis
+                        a.button_yellow(href='') More...
+                .column
+                    img(src='./img/microphone_icon.jpg')
+                    .description
+                        h3 Jorem ipsum
+                        span Cestibulum auctor dapibus neque
+                        p Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi, tincidunt quis, accumsan porttitor, facilisis
+                        a.button_yellow(href='') More...
+
+            .info_block_2
+                .column
+                    img(src='./img/phones.png')
+                    .description
+                        h3 Vivamus vestibulum nulla nec ante
+                        span Cestibulum auctor dapibus neque lobortis lorem at ipsum semper sagittis.
+                        p Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi, tincidunt quis, accumsan porttitor, facilisis bi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. ed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.
+                        a.button_white(href='') More...
+            .slider_block
+                h3 Bulum nulla necante
+                .caption Cestibulum auctor dapibus neque lobor
+                span Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam am dui mi, tincidunt quis, accumsan porttitor, facilisis bi in sem quis dui placerat ornare.
+                .notebook.fotorama(data-arrows='true')
+                    img(src='./img/slide1.jpg')
+                    img(src='./img/slide2.jpg')
+                //.nav
+                //    .left
+                //    .right
+            .footer
+                |  Copyright(c) website name.
+                a(href='#') Designed by: www.alltemplateneeds.com  /
+                |  Images from: www.wallpaperswide.com, www.photorack.net
+            //.modal
+            //    h3 Caption
+            //    p Text
+            //    form
+            //        .formgroup
+            //            label
+            //            input
