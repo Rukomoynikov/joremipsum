@@ -73,7 +73,7 @@ div.yellow_line {
   background-color: #fdbd1f;
 }
 .wrap > .jumbo {
-  background: url("img/jumbo.jpg");
+  background: url("../img/jumbo.jpg");
   height: 440px;
   position: relative;
   background-position: top center;
@@ -232,15 +232,16 @@ div.yellow_line {
   border-radius: 5px;
 }
 .wrap > .slider_block > .nav > .left {
-  background: url("./img/slider_arrow.png");
+  background: url("../img/slider_arrow.png");
   height: 32px;
   width: 31px;
 }
 .wrap > .slider_block > .nav > .right {
-  background: url("./img/slider_arrow.png");
+  background: url("../img/slider_arrow.png");
   height: 32px;
   width: 31px;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 .wrap > .footer {
   background: #f0f0f0;
