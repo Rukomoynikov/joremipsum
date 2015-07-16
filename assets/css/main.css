@@ -3,13 +3,13 @@
 }
 body,
 html {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: source_sans_proregular;
   font-size: 16px;
   width: 100%;
 }
-div.yellow_line {
+.yellow_line {
   background-color: #fdbd1f;
   height: 5px;
   width: 100%;
@@ -96,7 +96,7 @@ div.yellow_line {
   color: #fff;
 }
 .wrap > .jumbo > .text > a:hover {
-  transition: 0.3;
+  transition: all 0.3s;
   opacity: 1;
 }
 .wrap > .info_block {

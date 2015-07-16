@@ -3,16 +3,18 @@ var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	postcss = require('gulp-postcss'),
 	babel = require('gulp-babel'),
-	autoprefixer = require('/Users/air/node_modules/autoprefixer/');
+	autoprefixer = require('/Users/air/node_modules/autoprefixer/'),
+	livereload = require('gulp-livereload');
 
 gulp.task('css', function(){
 	var processors = [
-		autoprefixer({browsers: ['last 1 version']}),
+		autoprefixer({browsers: ['last 1 version', 'IE 8', 'IE 9', 'IE 10', 'IE 11']}),
 	]
 	return gulp.src('./assets/css/*.styl')
 		.pipe(stylus())
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('./assets/css/'))
+		.pipe(livereload())
 });
 
 gulp.task('jade', function(){
@@ -28,6 +30,11 @@ gulp.task('jade', function(){
 // })
 
 gulp.task('watch', function(){
+	livereload.listen({
+		port : 8080,
+		basePath : '/',
+		host : 'localhost'
+	})
 	gulp.watch('./*.jade', ['jade']);
 	gulp.watch('./assets/css/*.styl', ['css']);
 	// gulp.watch('./*.js', ['es6to5']);
